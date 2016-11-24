@@ -1,43 +1,43 @@
 <?xml version="1.0"?>
 <wallpapers>
-	<wallpaper deleted="false">
-		<name>Core 4 (Day)</nname>
-		<filename>
-			<size width="4500" height="3000">@datadir@/backgrounds/core4/Day-4500x3000.png</size>
-      <size width="4000" height="3000">@datadir@/backgrounds/core4/Day-4000x3000.png</size>
-      <size width="5120" height="2880">@datadir@/backgrounds/core4/Day-5120x2880.png</size>
-      <size width="6880" height="2880">@datadir@/backgrounds/core4/Day-6880x2880.png</size>
-		</filename>
-		<options>zoom</options>
-	</wallpaper>
-	<wallpaper deleted="false">
-		<name>Core 4 (Day, Plain)</nname>
-		<filename>
-			<size width="4500" height="3000">@datadir@/backgrounds/core4/Day-Plain-4500x3000.png</size>
-      <size width="4000" height="3000">@datadir@/backgrounds/core4/Day-Plain-4000x3000.png</size>
-      <size width="5120" height="2880">@datadir@/backgrounds/core4/Day-Plain-5120x2880.png</size>
-      <size width="6880" height="2880">@datadir@/backgrounds/core4/Day-Plain-6880x2880.png</size>
-		</filename>
-		<options>zoom</options>
-	</wallpaper>
-	<wallpaper deleted="false">
-		<name>Core 4 (Night)</nname>
-		<filename>
-			<size width="4500" height="3000">@datadir@/backgrounds/core4/Night-4500x3000.png</size>
-      <size width="4000" height="3000">@datadir@/backgrounds/core4/Night-4000x3000.png</size>
-      <size width="5120" height="2880">@datadir@/backgrounds/core4/Night-5120x2880.png</size>
-      <size width="6880" height="2880">@datadir@/backgrounds/core4/Night-6880x2880.png</size>
-		</filename>
-		<options>zoom</options>
-	</wallpaper>
-	<wallpaper deleted="false">
-		<name>Core 4 (Night, Plain)</nname>
-		<filename>
-			<size width="4500" height="3000">@datadir@/backgrounds/core4/Night-Plain-4500x3000.png</size>
-      <size width="4000" height="3000">@datadir@/backgrounds/core4/Night-Plain-4000x3000.png</size>
-      <size width="5120" height="2880">@datadir@/backgrounds/core4/Night-Plain-5120x2880.png</size>
-      <size width="6880" height="2880">@datadir@/backgrounds/core4/Night-Plain-6880x2880.png</size>
-		</filename>
-		<options>zoom</options>
-	</wallpaper>
+  <wallpaper deleted="false">
+    <name>Core 4 (Day)</name>
+      <filename>
+        <size width="4500" height="3000">@datadir@/backgrounds/core4/Day-4500x3000.png</size>
+        <size width="4000" height="3000">@datadir@/backgrounds/core4/Day-4000x3000.png</size>
+        <size width="5120" height="2880">@datadir@/backgrounds/core4/Day-5120x2880.png</size>
+        <size width="6880" height="2880">@datadir@/backgrounds/core4/Day-6880x2880.png</size>
+      </filename>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Core 4 (Day, Plain)</name>
+      <filename>
+        <size width="4500" height="3000">@datadir@/backgrounds/core4/Day-Plain-4500x3000.png</size>
+        <size width="4000" height="3000">@datadir@/backgrounds/core4/Day-Plain-4000x3000.png</size>
+        <size width="5120" height="2880">@datadir@/backgrounds/core4/Day-Plain-5120x2880.png</size>
+        <size width="6880" height="2880">@datadir@/backgrounds/core4/Day-Plain-6880x2880.png</size>
+      </filename>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Core 4 (Night)</name>
+      <filename>
+        <size width="4500" height="3000">@datadir@/backgrounds/core4/Night-4500x3000.png</size>
+        <size width="4000" height="3000">@datadir@/backgrounds/core4/Night-4000x3000.png</size>
+        <size width="5120" height="2880">@datadir@/backgrounds/core4/Night-5120x2880.png</size>
+        <size width="6880" height="2880">@datadir@/backgrounds/core4/Night-6880x2880.png</size>
+      </filename>
+    <options>zoom</options>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Core 4 (Night, Plain)</name>
+      <filename>
+        <size width="4500" height="3000">@datadir@/backgrounds/core4/Night-Plain-4500x3000.png</size>
+        <size width="4000" height="3000">@datadir@/backgrounds/core4/Night-Plain-4000x3000.png</size>
+        <size width="5120" height="2880">@datadir@/backgrounds/core4/Night-Plain-5120x2880.png</size>
+        <size width="6880" height="2880">@datadir@/backgrounds/core4/Night-Plain-6880x2880.png</size>
+      </filename>
+    <options>zoom</options>
+  </wallpaper>
 </wallpapers>
