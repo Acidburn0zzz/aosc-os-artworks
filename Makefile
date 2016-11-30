@@ -32,10 +32,10 @@ DESTDIR =
 DATAROOTDIR = /usr/share
 
 # Version definitions.
-CORE = 4.0.1
-REL = 4.0
+CORE = 4.1.0
+REL = 4.1
 ARCH = x86_64
-DATE = 20160924
+DATE = 20161201
 
 # Dimension definitions.
 H32 = 3000
