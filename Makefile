@@ -52,7 +52,7 @@ all : png $(XMLS:=.xml) screenshot
 $(IMAGES:=-gen.svg) : ${IMAGES:=.svg}
 	sed	-e "s|>REL<|>$(REL)<|g" \
 		-e "s|ARCHIT|$(ARCH)|g" \
-		-e "s|RV|$(REL)|g" \
+		-e "s|REV|$(REL)|g" \
 		-e "s|REL_DATE|$(DATE)|g" \
 		-e "s|COREV|$(CORE)|g" \
 		"$(subst -gen.svg,.svg,$@)" > "$@"
