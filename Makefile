@@ -54,7 +54,7 @@ $(IMAGES:=-gen.svg) : ${IMAGES:=.svg}
 		-e "s|ARCHIT|$(ARCH)|g" \
 		-e "s|REV|$(REL)|g" \
 		-e "s|REL_DATE|$(DATE)|g" \
-		-e "s|COREV|$(CORE)|g" \
+		-e "s|CORV|$(CORE)|g" \
 		"$(subst -gen.svg,.svg,$@)" > "$@"
 
 $(IMAGES_32:=-$(W32)x$(H32).png) : $(IMAGES_32:=-gen.svg)
