@@ -1,6 +1,6 @@
 #!/bin/sh
 
-date=20170208
+date=20170607
 
 for i in `cat arch-list`; do
     make clean
