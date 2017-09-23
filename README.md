@@ -1,4 +1,26 @@
-# Wallpaper Preview
+# AOSC OS Artworks (2017-2018)
+
+This repository contains all wallpapers to be used as default for all Core 5
+series AOSC OS releases.
+
+## Download
+
+A package pre-built wallpapers is available for you to download...
+
+[Download Here](https://github.com/AOSC-Dev/aosc-os-artworks/releases/download/v20170923/aosc-os-artworks-20170923.tar.xz)
+
+When downloaded, un-tar the package to the root directory `/`.
+
+## Build It Yourself
+
+You will need Inkscape to build these wallpapers... Do note though, as we
+default to quite some high output resolutions, and given the wallpapers'
+complexity, it may require quite some time to build (but yes, parallelism
+is available, `make -j` to engage).
+
+```bash
+make && sudo make install
+```
 
 ## Desktop
 
