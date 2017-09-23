@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<wallpapers>
+  <wallpaper deleted="false">
+    <name>Core 5 (Variant "B")</name>
+    <filename>@datadir@/backgrounds/core5/core5-b-wallpapers.xml</filename>
+    <options>zoom</options>
+  </wallpaper>
+</wallpapers>

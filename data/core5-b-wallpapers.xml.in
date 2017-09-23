@@ -1,0 +1,12 @@
+<background>
+  <static>
+    <file>
+      <size width="4500" height="3000">/usr/share/backgrounds/core5/B-4500x3000.png</size>
+      <size width="4500" height="4600">/usr/share/backgrounds/core5/B-4500x3600.png</size>
+      <size width="4000" height="3000">/usr/share/backgrounds/core5/B-4000x3000.png</size>
+      <size width="5120" height="2880">/usr/share/backgrounds/core5/B-5120x2880.png</size>
+      <size width="5120" height="3200">/usr/share/backgrounds/core5/B-5120x3200.png</size>
+      <size width="6880" height="2880">/usr/share/backgrounds/core5/B-6880x2880.png</size>
+    </file>
+  </static>
+</background>

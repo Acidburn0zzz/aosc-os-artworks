@@ -9,7 +9,10 @@ IMAGES = ${IMAGES_32} ${IMAGES_43} ${IMAGES_54} ${IMAGES_169} ${IMAGES_1610} ${I
 VARIANTS = A B Plain
 XMLS = data/core5-a \
        data/core5-b \
-       data/core5-plain
+       data/core5-plain \
+       data/core5-a-wallpapers \
+       data/core5-b-wallpapers \
+       data/core5-plain-wallpapers
 
 # Stupid KDE doesn't know how to deal with multi-resolution.
 RESO169 = 1366x768 1600x900 1920x1080 2880x1800
@@ -47,7 +50,7 @@ W1610 = 5120
 H219 = 2880
 W219 = 6880
 
-all : png $(XMLS:=.xml) screenshot
+all : png $(XMLS:=.xml) $(XMLSW:=.xml) screenshot
 
 $(IMAGES_32:=-$(W32)x$(H32).png) : $(IMAGES_32:=.svg)
 	inkscape -h $(H32) -w $(W32) -e $@ $(subst -$(W32)x$(H32).png,.svg,$@)
@@ -101,15 +104,25 @@ install-images : png
 
 install-xml : $(XMLS:=.xml)
 	$(MKDIR) ${DESTDIR}/$(DATAROOTDIR)/background-properties
-	$(CP) data/core5-wallpapers.xml ${DESTDIR}/$(DATAROOTDIR)/background-properties
+	$(MKDIR) ${DESTDIR}/$(DATAROOTDIR)/backgrounds/core5
+	$(CP) data/core5-a.xml ${DESTDIR}/$(DATAROOTDIR)/background-properties
+	$(CP) data/core5-b.xml ${DESTDIR}/$(DATAROOTDIR)/background-properties
+	$(CP) data/core5-plain.xml ${DESTDIR}/$(DATAROOTDIR)/background-properties
+	$(CP) data/core5-a-wallpapers.xml ${DESTDIR}/$(DATAROOTDIR)/backgrounds/core5
+	$(CP) data/core5-b-wallpapers.xml ${DESTDIR}/$(DATAROOTDIR)/backgrounds/core5
+	$(CP) data/core5-plain-wallpapers.xml ${DESTDIR}/$(DATAROOTDIR)/backgrounds/core5
 
 install-gnome : install-xml install-images
 	$(MKDIR) ${DESTDIR}/$(DATAROOTDIR)/gnome-background-properties
-	$(LN) ../background-properties/core5-wallpapers.xml ${DESTDIR}/$(DATAROOTDIR)/gnome-background-properties
+	$(LN) ../background-properties/core5-a.xml ${DESTDIR}/$(DATAROOTDIR)/gnome-background-properties
+	$(LN) ../background-properties/core5-b.xml ${DESTDIR}/$(DATAROOTDIR)/gnome-background-properties
+	$(LN) ../background-properties/core5-plain.xml ${DESTDIR}/$(DATAROOTDIR)/gnome-background-properties
 
 install-mate : install-xml install-images
 	$(MKDIR) ${DESTDIR}/$(DATAROOTDIR)/mate-background-properties
-	$(LN) ../background-properties/core5-wallpapers.xml ${DESTDIR}/$(DATAROOTDIR)/mate-background-properties
+	$(LN) ../background-properties/core5-a.xml ${DESTDIR}/$(DATAROOTDIR)/mate-background-properties
+	$(LN) ../background-properties/core5-b.xml ${DESTDIR}/$(DATAROOTDIR)/mate-background-properties
+	$(LN) ../background-properties/core5-plain.xml ${DESTDIR}/$(DATAROOTDIR)/mate-background-properties
 
 install-xfce : install-images
 	$(LN) core5 ${DESTDIR}/$(DATAROOTDIR)/backgrounds/xfce
