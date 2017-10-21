@@ -15,6 +15,7 @@ XMLS = data/core5-a \
        data/core5-plain-wallpapers
 
 # Stupid KDE doesn't know how to deal with multi-resolution.
+RESO11 = 4096x4096 2048x2048
 RESO169 = 1366x768 1600x900 1920x1080 2880x1800 3840x2160
 RESO1610 = 1280x800 1440x900 1680×1050 1920×1200 2560×1600
 RESO219 = 2560x1080 3440x1440
@@ -88,13 +89,16 @@ screenshot : $(IMAGES_169:=-screenshot.png)
 
 clean :
 	$(FIND) . -name '*gen*.svg' -exec $(RM) {} \;
-	$(FIND) . -name '*.png' -exec $(RM) {} \;
+	for image in "32 43 54 169 1610 219"; do \
+		$(FIND) $${image} -name '*.png' -exec $(RM) {} \; ;\
+	done
 	$(FIND) . -name '*.xml' -exec $(RM) {} \;
 
 install : install-images install-xml install-gnome install-mate install-xfce install-kde
 
 install-images : png
 	$(MKDIR) ${DESTDIR}/$(DATAROOTDIR)/backgrounds/core5
+	$(CP) 11/core5-rendered.jpg ${DESTDIR}/$(DATAROOTDIR)/backgrounds/core5
 	$(CP) $(IMAGES_32:=-$(W32)x$(H32).png) ${DESTDIR}/$(DATAROOTDIR)/backgrounds/core5
 	$(CP) $(IMAGES_43:=-$(W43)x$(H43).png) ${DESTDIR}/$(DATAROOTDIR)/backgrounds/core5
 	$(CP) $(IMAGES_54:=-$(W54)x$(H54).png) ${DESTDIR}/$(DATAROOTDIR)/backgrounds/core5
@@ -136,6 +140,9 @@ install-kde : install-images
 		$(LN) ../../../../backgrounds/core5/$${variant}-[0-9]*.png . ; \
 		for i in *.png; do \
 			$(MV) $${i} $${i##*-} ; \
+		done ; \
+		for reso11 in $(RESO11); do \
+			$(LN) core5-rendered.jpg $${reso11}.jpg ; \
 		done ; \
 		for reso169 in $(RESO169); do \
 			$(LN) 5120x2880.png $${reso169}.png ; \
