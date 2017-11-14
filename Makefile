@@ -135,7 +135,9 @@ install-mate : install-xml install-images
 	$(LN) ../background-properties/core5-rendered.xml ${DESTDIR}/$(DATAROOTDIR)/mate-background-properties
 
 install-xfce : install-images
-	$(LN) core5 ${DESTDIR}/$(DATAROOTDIR)/backgrounds/xfce
+	$(MKDIR) ${DESTDIR}/$(DATAROOTDIR)/backgrounds/xfce
+	$(LN) ../core5/*.png ${DESTDIR}/$(DATAROOTDIR)/backgrounds/xfce
+	$(LN) ../core5/*.jpg ${DESTDIR}/$(DATAROOTDIR)/backgrounds/xfce
 
 install-kde : install-images
 	for variant in $(VARIANTS); do \
