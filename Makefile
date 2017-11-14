@@ -136,10 +136,10 @@ install-mate : install-xml install-images
 
 install-xfce : install-images
 	$(MKDIR) ${DESTDIR}/$(DATAROOTDIR)/backgrounds/xfce
-	pushd ${DESTDIR}/$(DATAROOTDIR)/backgrounds/xfce
+	$(PUSHD) ${DESTDIR}/$(DATAROOTDIR)/backgrounds/xfce
 	$(LN) ../core5/*.png .
 	$(LN) ../core5/*.jpg .
-	popd
+	$(POPD)
 
 install-kde : install-images
 	for variant in $(VARIANTS); do \
