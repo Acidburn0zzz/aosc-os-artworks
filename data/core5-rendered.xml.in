@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <wallpapers>
   <wallpaper deleted="false">
-    <name>Core 5 (Variant "Rendered")</name>
+    <name>Core 5 (Rendered Wallpapers)</name>
     <filename>@datadir@/backgrounds/core5/core5-rendered-wallpapers.xml</filename>
     <options>zoom</options>
   </wallpaper>
