@@ -38,15 +38,15 @@ This collection comes with three variants, as follows...
 
 Variant "A", with Roman numeral 5, or "V".
 
-![variant-a](https://i.imgur.com/dcEcjPw.png)
+![variant-a](https://imgur.com/9vhNbuJ.png)
 
 Variant "B", with Arabic numeral 5.
 
-![variant-b](https://i.imgur.com/uajUBcM.png)
+![variant-b](https://imgur.com/lNCAO05.png)
 
 Variant "Plain", with no text.
 
-![variant-plain](https://i.imgur.com/nXUJlrQ.png)
+![variant-plain](https://imgur.com/HO9NrQY.png)
 
 ## Mobile (Portrait)
 
