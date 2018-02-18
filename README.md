@@ -48,6 +48,14 @@ Variant "Plain", with no text.
 
 ![variant-plain](https://imgur.com/HO9NrQY.png)
 
+Variant "Rendered", AOSC 5th Anniversary Plaque on a Desk.
+
+![variant-rendered](https://imgur.com/3pudu5Y.png)
+
+Variant "Rendered", Tablet Running AOSC OS on a Desk.
+
+![variant-rendered-desk](https://imgur.com/TD3MhQB.png)
+
 ## Mobile (Portrait)
 
 ![mobile](https://github.com/AOSC-Dev/aosc-os-artworks/raw/master/916/mobilephone-wallpaper.png)
