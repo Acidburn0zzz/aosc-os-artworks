@@ -1,0 +1,3 @@
+[submodule "rendered/filmic-blender"]
+	path = rendered/filmic-blender
+	url = https://github.com/sobotka/filmic-blender.git
