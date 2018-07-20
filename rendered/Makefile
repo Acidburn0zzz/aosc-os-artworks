@@ -1,6 +1,9 @@
+export OCIO := ./filmic-blender/config.ocio
+
 all: campanula-alt.png campanula-wireframe.png campanula.png
 
 campanula-alt.png: campanula-alt.blend
+	@echo  $$OCIO
 	blender -b campanula-alt.blend -x 0 -o '//campanula-alt_####.png' -f 0 -F PNG -t 0
 	mv 'campanula-alt_0000.png' 'campanula-alt.png'
 

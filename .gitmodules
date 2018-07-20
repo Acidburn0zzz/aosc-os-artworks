@@ -1,3 +1,6 @@
 [submodule "rendered/filmic-blender"]
 	path = rendered/filmic-blender
 	url = https://github.com/sobotka/filmic-blender.git
+[submodule "rendered/icc"]
+	path = rendered/icc
+	url = https://github.com/ellelstone/elles_icc_profiles.git
