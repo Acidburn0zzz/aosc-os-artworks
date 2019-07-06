@@ -103,7 +103,7 @@ def gen_img_xml(series, dest, prefix):
 
     for key in RATIOS:
         src_img = "rendered/" + key + "/" + fname + "-" + key + ".png"
-        dest_img = IMG_PATH % (fname, fname + "-" + key)
+        dest_img = prefix + IMG_PATH % (fname, fname + "-" + key)
         with Image.open(src_img) as im:
             width, height = im.size
         size = ET.SubElement(file, "size", {"width": "%i" % width, "height": "%i" % height})
